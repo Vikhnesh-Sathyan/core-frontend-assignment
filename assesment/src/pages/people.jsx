@@ -1,4 +1,5 @@
 import EmployeeCard from '../components/employeecard'
+import ethan from "../assets/ethan.jpg"
 
 function People() {
   return (
@@ -21,8 +22,9 @@ function People() {
           role="Marketing Manager"
         />
         <EmployeeCard 
-          name="Ethan Lee"
-          role="Product Designer"
+            name="Ethan Lee"
+            role="IT Specialist"
+            image={ethan}
         />
         <EmployeeCard 
           name="Olivia Smith"
