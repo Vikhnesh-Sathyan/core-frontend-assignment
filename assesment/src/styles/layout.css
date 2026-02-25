@@ -30,7 +30,7 @@
 }
 
 .page-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   color: #3D3936;
 }
@@ -96,4 +96,78 @@
   font-weight: 400;
   color: #947550;
   letter-spacing: -0.02em;
+}
+/* ===== Sidebar Styling ===== */
+
+.workspace-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #3D3936;
+}
+
+.sidebar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu-item {
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3D3936;
+  transition: background 0.2s ease;
+}
+
+.menu-item:hover {
+  background: #F2F2F2;
+}
+
+.menu-item.active {
+  background: #F2F2F2;
+  font-weight: 500;
+}
+/* ===== Responsive ===== */
+
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 248px);
+  }
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 248px);
+  }
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-card {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .people-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
